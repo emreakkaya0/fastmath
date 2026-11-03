@@ -1,0 +1,43 @@
+<html lang="tr">
+<head>
+    <title> Hesap Makinesi </title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+    <input type="text" id="buton">
+
+    <table>
+        <tr>
+            <td> <button onclick="SayiEkle('1')" > 1 </button> </td>
+            <td> <button onclick="SayiEkle('2')" > 2 </button> </td>
+            <td> <button onclick="SayiEkle('3')" > 3 </button> </td>
+            <td> <button onclick="SayiEkle('+')" title="toplama"> + </button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="SayiEkle('4')" > 4 </button> </td>
+            <td> <button onclick="SayiEkle('5')" > 5 </button> </td>
+            <td> <button onclick="SayiEkle('6')" > 6 </button> </td>
+            <td> <button onclick="SayiEkle('-')" title="çıkarma"> - </button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="SayiEkle('7')" > 7 </button> </td>
+            <td> <button onclick="SayiEkle('8')" > 8 </button> </td>
+            <td> <button onclick="SayiEkle('9')" > 9 </button> </td>
+            <td> <button onclick="SayiEkle('x')" title="çarpma"> x </button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="Temizle()" > sil </button> </td>
+            <td> <button onclick="SayiEkle('0')" > 0 </button> </td>
+            <td> <button onclick="SayiEkle('%')" title="yüzde alma"> % </button></td>
+            <td> <button onclick="SayiEkle('÷')" title="bölme"> / </button></td>
+        </tr>        
+    </table>
+
+    <script src="calculations.js"></script>
+    <a href="index.html" target="_self"> <button> Geri Dön </button> </a> <br>
+
+    
+</body>
+</html>
