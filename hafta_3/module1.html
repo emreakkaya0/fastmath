@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="tr">
+<head>
+    <title> Hesap Makinesi </title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+    <br>
+    <table>
+        <tr>
+            <input type="text" id="buton"> 
+        </tr>
+
+        <tr>
+            <td> <button onclick="SayiEkle('1')" class="hesap_makine_butonlari"> 1 </button> </td>
+            <td> <button onclick="SayiEkle('2')" class="hesap_makine_butonlari"> 2 </button> </td>
+            <td> <button onclick="SayiEkle('3')" class="hesap_makine_butonlari"> 3 </button> </td>
+            <td> <button onclick="SayiEkle('+')" class="hesap_makine_butonlari" title="toplama"> + </button> </td> 
+        </tr>
+
+        <tr>
+            <td> <button onclick="SayiEkle('4')" class="hesap_makine_butonlari"> 4 </button> </td>
+            <td> <button onclick="SayiEkle('5')" class="hesap_makine_butonlari"> 5 </button> </td>
+            <td> <button onclick="SayiEkle('6')" class="hesap_makine_butonlari"> 6 </button> </td>
+            <td> <button onclick="SayiEkle('-')" class="hesap_makine_butonlari" title="çıkarma">  - </button> </td>
+        </tr>
+
+        <tr>
+            <td> <button onclick="SayiEkle('7')" class="hesap_makine_butonlari"> 7 </button> </td>
+            <td> <button onclick="SayiEkle('8')" class="hesap_makine_butonlari"> 8 </button> </td>
+            <td> <button onclick="SayiEkle('9')" class="hesap_makine_butonlari"> 9 </button> </td>
+            <td> <button onclick="SayiEkle('x')" class="hesap_makine_butonlari" title="çarpma"> x </button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="Temizle()" class="hesap_makine_butonlari" > sil </button> </td>
+            <td> <button onclick="SayiEkle('0')" class="hesap_makine_butonlari" > 0 </button> </td>
+            <td> <button onclick="SayiEkle('=')" class="hesap_makine_butonlari" title="eşittir"> = </button></td>
+            <td> <button onclick="SayiEkle('÷')" class="hesap_makine_butonlari" title="bölme"> ÷ </button></td>
+        </tr>     
+    </table>
+
+
+    <br>
+    <a href="index.html" target="_self"> <button> Geri Dön </button> </a> 
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="tr"> 
+<head>
+    <title> Üye Ol </title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <h1> Üyelik Formu </h1>
+
+    <form>
+        <table>
+            
+            <tr>      
+                <td class="yazilar"> Adınız:</td>
+                <td><input type="text" id="name1"></td> 
+            </tr>    
+            <tr> 
+                <td class="yazilar"> Soyadınız:</td>
+                <td><input type="text" id="surname1"></td>
+            </tr>
+            <tr>
+                <td class="yazilar"> E-Mail adresi:</td>
+                <td><input type="email" id="email1"></td>
+            </tr>
+            <tr> 
+                <td class="yazilar"> Kullanıcı adı oluşturun:</td>
+                <td> <input type="text" id="username1"> </td>
+            </tr>
+            <tr>
+                <td class="yazilar"> Şifre oluşturun:</td>
+                <td> <input type="password" id="password1"> </td>
+            </tr> 
+            
+
+        </table>
+    </form> <br>
+
+    <button onclick="KullaniciEkle('name1','surname1','email1','username1','password1')"> Kaydet </button>
+    <a href="log_in.html" target="_self"> <button> Geri Dön </button> </a> 
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

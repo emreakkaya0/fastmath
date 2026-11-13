@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html lang="tr">
+<head>
+    <title> Dönüştürücü</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <td> <h3 class="yazilar"> Uzunluk </h3> </td>
+        </tr>
+
+        <tr>
+            <td> <span class="yazilar"> Miktar giriniz: </span> </td>
+            <td> <input type="text" id="amount1"> </td>
+        </tr>
+
+        <tr>
+            <td class="yazilar"> Dönüştürülen birim: </td>
+            <td>
+            <select id="uzunluk_input">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm (Pikometre)</option>    
+                <option>nm (Nanometre)</option>
+                <option>μm (Mikrometre)</option> 
+                <option>mm (Milimetre)</option>
+                <option>cm (Santimetre)</option>
+                <option>dm (Desimetre)</option>
+                <option>m (Metre)</option>
+                <option>dam (Dekametre)</option>
+                <option>hm (Hektometre)</option>
+                <option>km (Kilometre)</option>
+                <option>ft (Feet)</option>
+            </select>
+            </td>
+
+            <td class="yazilar"> Dönüştürüleceği birim: </td>
+
+            <td>                
+            <select id="uzunluk_output">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm (Pikometre)</option>    
+                <option>nm (Nanometre)</option>
+                <option>μm (Mikrometre)</option> 
+                <option>mm (Milimetre)</option>
+                <option>cm (Santimetre)</option>
+                <option>dm (Desimetre)</option>
+                <option>m (Metre)</option>
+                <option>dam (Dekametre)</option>
+                <option>hm (Hektometre)</option>
+                <option>km (Kilometre)</option>
+                <option>ft (Feet)</option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td> <button onclick="Convert(uzunluk,'uzunluk_input','uzunluk_output','amount1')"> Dönüştür </button> </td>             
+        </tr>             
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td> <h3 class="yazilar"> Alan </h3> </td>
+        </tr>
+
+        <tr>
+            <td> <span class="yazilar"> Miktar giriniz: </span> </td>
+            <td> <input type="text" id="amount2"> </td>
+        </tr>
+
+        <tr>
+            <td class="yazilar"> Dönüştürülen birim: </td>
+            <td>
+            <select id="alan_input">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm² (Pikometrekare)</option>    
+                <option>nm² (Nanometrekare)</option>
+                <option>μm² (Mikrometrekare)</option> 
+                <option>mm² (Milimetrekare)</option>
+                <option>cm² (Santimetrekare)</option>
+                <option>dm² (Desimetrekare)</option>
+                <option>m² (Metrekare)</option>
+                <option>dam² (Dekametrekare)</option>
+                <option>hm² (Hektometrekare)</option>
+                <option>km² (Kilometrekare)</option>
+                <option>ft² (Feetkare)</option>
+            </select>
+            </td>
+        
+            <td class="yazilar"> Dönüştürüleceği birim: </td>
+
+            <td>                
+            <select id="alan_output">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm² (Pikometrekare)</option>    
+                <option>nm² (Nanometrekare)</option>
+                <option>μm² (Mikrometrekare)</option> 
+                <option>mm² (Milimetrekare)</option>
+                <option>cm² (Santimetrekare)</option>
+                <option>dm² (Desimetrekare)</option>
+                <option>m² (Metrekare)</option>
+                <option>dam² (Dekametrekare)</option>
+                <option>hm² (Hektometrekare)</option>
+                <option>km² (Kilometrekare)</option>
+                <option>ft² (Feetkare)</option>
+            </select>
+            </td>
+        </tr>
+        
+        </tr>
+            <td> <button onclick="Convert(alan,'alan_input','alan_output','amount2')"> Dönüştür </button> </td>         
+        </tr>   
+    </table> 
+
+    <hr>
+
+    <table>
+        <tr>
+            <td> <h3 class="yazilar"> Hacim </h3> </td>
+        </tr>
+
+        <tr>
+            <td> <span class="yazilar"> Miktar giriniz: </span> </td>
+            <td> <input type="text" id="amount3"> </td>
+        </tr>
+
+        <tr>
+            <td class="yazilar"> Dönüştürülen birim: </td>
+            <td>
+            <select id="hacim_input">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm³ (Pikometreküp)</option>    
+                <option>nm³ (Nanometreküp)</option>
+                <option>μm³ (Mikrometreküp)</option> 
+                <option>mm³ (Milimetreküp)</option>
+                <option>cm³ (Santimetreküp)</option>
+                <option>dm³ (Desimetreküp)</option>
+                <option>m³ (Metreküp)</option>
+                <option>dam³ (Dekametreküp)</option>
+                <option>hm³ (Hektometreküp)</option>
+                <option>km³ (Kilometreküp)</option>
+                <option>ft³ (Feetküp)</option>
+            </select>
+            </td> 
+        
+            <td class="yazilar"> Dönüştürüleceği birim: </td>
+
+            <td>                
+            <select id="hacim_output">
+                <option> SEÇİM YAPINIZ </option>
+                <option>pm³ (Pikometreküp)</option>    
+                <option>nm³ (Nanometreküp)</option>
+                <option>μm³ (Mikrometreküp)</option> 
+                <option>mm³ (Milimetreküp)</option>
+                <option>cm³ (Santimetreküp)</option>
+                <option>dm³ (Desimetreküp)</option>
+                <option>m³ (Metreküp)</option>
+                <option>dam³ (Dekametreküp)</option>
+                <option>hm³ (Hektometreküp)</option>
+                <option>km³ (Kilometreküp)</option>
+                <option>ft³ (Feetküp)</option>
+            </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td> <button onclick="Convert(hacim,'hacim_input','hacim_output','amount3')"> Dönüştür </button> </td>
+        </tr>         
+    </table>
+
+    <hr>
+
+
+
+    <br>
+    <a href="index.html" target="_self"> <button> Geri Dön </button> </a> <br>
+    <p id="result"> </p>
+
+    <script src="script.js"></script>  
+</body>
+</hmtl>

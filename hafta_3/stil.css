@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Arial' ;         
+    font-weight: 600;
+}
+
+button {
+    font-family: Verdana;  
+}
+
+.yazilar{
+    font-family: Verdana;
+}
+
+
+
+.saga-hizala {
+  position: fixed; 
+  top: 15px;       
+  right: 20px;    
+  display: flex;
+  align-items: right;
+  gap: 10px;
+  z-index: 1000;   
+}
+
+.forum_metin_kutusu{
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+
+.hesap_makine_butonlari{
+    font-family:'Segoe UI';
+    font-size: large;
+    width: 120px;
+    height: 40px;
+    
+}
